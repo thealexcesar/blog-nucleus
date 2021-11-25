@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+      <h1>Login</h1>
+
+      <% if @user_exists %>
+        <p>Digite seu email e senha para logar.</p>
+
+        <%= render "admin/users/partials/form_login" %>
+      <% else %>
+        <p>Crie seu primeiro usuário</p>
+
+        <%= render "admin/users/partials/form", user: @user, admin: true  %>
+      <% end %>
+    </div>
+  </div>
+</div>

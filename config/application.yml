@@ -1,0 +1,10 @@
+development:
+  SECRET_KEY_BASE: "6gCWJ5F7vL5cFjNeU9rV"
+
+test:
+  SECRET_KEY_BASE: "6gCWJ5F7vL5cFjNeU9rV"
+
+# Do not keep production secrets in the repository,
+# instead read values from the environment.
+production:
+  SECRET_KEY_BASE: "6gCWJ5F7vL5cFjNeU9rV"

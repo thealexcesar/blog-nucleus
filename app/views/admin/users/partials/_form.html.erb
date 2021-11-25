@@ -1,0 +1,40 @@
+<%
+if user.new_record?
+  url_form = admin_users_path
+else
+  url_form = admin_user_path(user)
+end
+%>
+<%= form_with(model: user, url: url_form, local: true, class: "form-validate") do |form| %>
+
+  <%= form.hidden_field :tipo, value: "admin" if admin %>
+
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-3">
+      <%= form.label :email, class: "form-label" %>
+      <%= form.email_field :email, class: "form-control" %>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-3">
+      <%= form.label :senha , class: "form-label"%>
+      <%= form.password_field :senha, class: "form-control"%>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :nome, class: "form-label" %>
+    <%= form.text_field :nome, class: "form-control" %>
+  </div>
+
+  <% unless admin %>
+    <div class="mb-3">
+      <%= form.label :tipo, class: "form-label" %>
+      <%= form.select :tipo, ["admin", "commun"], {include_blank: false}, class: "form-control"%>
+    </div>
+  <% end %>
+
+
+
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </div>
+<% end %>
