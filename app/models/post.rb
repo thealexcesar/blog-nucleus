@@ -1,6 +1,4 @@
 class Post < ApplicationRecord
-  belongs_to :user
-  has_many :comments, dependent: :destroy
-
-  enum status: { rascunho: 0, publicado: 1}
+  has_many :comments
+  validates_presence_of :title, :body
 end

@@ -1,0 +1,7 @@
+<%= form_for([ @post, Comment.new ], remote: true) do |form| %>
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    Your comment: <br>
+    <%= form.text_area :body, size: '50x10' %> <br>
+    <%= form.submit %>
+  </div>
+<% end %>

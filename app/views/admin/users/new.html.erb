@@ -1,10 +1,5 @@
-<div class="row">
-  <div class="col-6">
-    <h1>Novo usuário</h1>
-  </div>
-  <div class="col-6">
-    <%= link_to fa_icon("arrow-left", text: "Voltar"), admin_users_path, class: "btn btn-primary float-end" %>
-  </div>
-</div>
+<h1>New User</h1>
 
-<%= render 'admin/users/partials/form', user: @user, admin: false %>
+<%= render 'admin/partials/form', user: @user %>
+
+<%= link_to 'Back', users_path %>

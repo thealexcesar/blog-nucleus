@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
 
+  # validates_presence_of :title
+
   # GET /posts or /posts.json
   def index
     @posts = Post.all
@@ -64,6 +66,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:titulo, :intro, :descricao, :status, :user_id)
+      params.require(:post).permit(:title, :body, :name)
     end
 end

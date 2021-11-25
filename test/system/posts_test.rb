@@ -14,11 +14,9 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     click_on "New Post"
 
-    fill_in "Descricao", with: @post.descricao
-    fill_in "Intro", with: @post.intro
-    fill_in "Status", with: @post.status
-    fill_in "Titulo", with: @post.titulo
-    fill_in "User", with: @post.user_id
+    fill_in "Body", with: @post.body
+    fill_in "Name", with: @post.name
+    fill_in "Title", with: @post.title
     click_on "Create Post"
 
     assert_text "Post was successfully created"
@@ -29,11 +27,9 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     click_on "Edit", match: :first
 
-    fill_in "Descricao", with: @post.descricao
-    fill_in "Intro", with: @post.intro
-    fill_in "Status", with: @post.status
-    fill_in "Titulo", with: @post.titulo
-    fill_in "User", with: @post.user_id
+    fill_in "Body", with: @post.body
+    fill_in "Name", with: @post.name
+    fill_in "Title", with: @post.title
     click_on "Update Post"
 
     assert_text "Post was successfully updated"

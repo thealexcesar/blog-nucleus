@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Titulo:</strong>
-  <%= @post.titulo %>
+  <strong>Title:</strong>
+  <%= @post.title %>
 </p>
 
 <p>
-  <strong>Intro:</strong>
-  <%= @post.intro %>
+  <strong>Body:</strong>
+  <%= @post.body %>
 </p>
 
 <p>
-  <strong>Descricao:</strong>
-  <%= @post.descricao %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @post.status %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @post.user %>
+  <strong>Name:</strong>
+  <%= @post.name %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+<%#= render 'comments/comment' %>
+
+<div class="container col-4 bg-dark text-white">
+  <h2 class="h3">Comments</h2>
+  <div id="comments">
+    <%= render @post.comments %>
+  </div>
+</div>
+<%= render 'comments/new', post: @post %>
