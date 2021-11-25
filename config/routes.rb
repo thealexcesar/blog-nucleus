@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :posts
 
-  root to: "admin/users#login"
+  root to: "posts#index"
 
   namespace 'admin' do
     resources :users do
