@@ -13802,3 +13802,183 @@ SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_control
 app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
 app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
 app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+Started GET "/" for 127.0.0.1 at 2021-11-26 10:48:35 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5502)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 2.2ms | Allocations: 723)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 23742)
+Completed 200 OK in 76ms (Views: 50.9ms | ActiveRecord: 8.6ms | Allocations: 28127)
+
+
+Started DELETE "/posts/2" for 127.0.0.1 at 2021-11-26 10:48:42 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:60:in `set_post'
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/posts/2
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms | Allocations: 2030)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-11-26 10:48:42 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:60:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:27
+  Rendered collection of comments/_comment.html.erb [3 times] (Duration: 0.7ms | Allocations: 261)
+  Rendered comments/_new.html.erb (Duration: 17.7ms | Allocations: 2217)
+  Rendered posts/show.html.erb within layouts/application (Duration: 41.3ms | Allocations: 11449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 520)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 19045)
+Completed 200 OK in 56ms (Views: 45.8ms | ActiveRecord: 6.4ms | Allocations: 20269)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-11-26 10:48:50 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 519)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 9432)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 3.3ms | Allocations: 9838)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2021-11-26 10:48:51 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:60:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.0ms | Allocations: 1801)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 520)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10007)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 1.5ms | Allocations: 11741)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-11-26 10:48:55 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:60:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:27
+  Rendered collection of comments/_comment.html.erb [3 times] (Duration: 0.8ms | Allocations: 131)
+  Rendered comments/_new.html.erb (Duration: 1.2ms | Allocations: 332)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 518)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 9871)
+Completed 200 OK in 30ms (Views: 20.5ms | ActiveRecord: 4.4ms | Allocations: 10964)
+
+
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:49:00 -0300
+  
+SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+...%i[ show edit update destroy ]]
+...                              ^):
+  
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:49:24 -0300
+Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"body"=>"teste comentario 3"}, "commit"=>"Create Comment", "post_id"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1087)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started GET "/posts/2" for 127.0.0.1 at 2021-11-26 10:49:33 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:60:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:27
+  Rendered collection of comments/_comment.html.erb [3 times] (Duration: 0.4ms | Allocations: 140)
+  Rendered comments/_new.html.erb (Duration: 1.8ms | Allocations: 500)
+  Rendered posts/show.html.erb within layouts/application (Duration: 28.7ms | Allocations: 6936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 522)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 14660)
+Completed 200 OK in 65ms (Views: 33.1ms | ActiveRecord: 16.3ms | Allocations: 20735)
+
+
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:49:47 -0300
+Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"body"=>"aaaaaaaaaaaaaaaaaaa"}, "commit"=>"Create Comment", "post_id"=>"2"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12:in `set_post'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+  [1m[36mComment Create (1.4ms)[0m  [1m[32mINSERT INTO "comments" ("post_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 2], ["body", "aaaaaaaaaaaaaaaaaaa"], ["created_at", "2021-11-26 13:49:47.143885"], ["updated_at", "2021-11-26 13:49:47.143885"]]
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 200 OK in 37ms (ActiveRecord: 18.0ms | Allocations: 12822)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-26 10:49:47 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 522)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 8968)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 2.1ms | Allocations: 9571)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-11-26 10:49:49 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:60:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:27
+  Rendered collection of comments/_comment.html.erb [4 times] (Duration: 0.5ms | Allocations: 154)
+  Rendered comments/_new.html.erb (Duration: 1.4ms | Allocations: 384)
+  Rendered posts/show.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 518)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 10130)
+Completed 200 OK in 32ms (Views: 21.6ms | ActiveRecord: 5.1ms | Allocations: 11224)
+
+

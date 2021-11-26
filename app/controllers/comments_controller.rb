@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]]
+  before_action :set_post
   def create
     @post.comments.create! comments_params
     # CommentsMailer.submitted(comment).deliver_later
