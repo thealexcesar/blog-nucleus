@@ -27,13 +27,10 @@ class PostsController < ApplicationController
       if @post.save
         format.html { redirect_to @post, notice: "Post was successfully created." }
         format.json { render :show, status: :created, location: @post }
-      # else
-      #   format.html { render :new, status: :unprocessable_entity }
-      #   format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
   rescue
-    redirect_to new_post_path, alert: "Problema!"
+    redirect_to new_post_path, alert: "Preencha todos os campos."
   end
 
   # PATCH/PUT /posts/1 or /posts/1.json
@@ -52,10 +49,10 @@ class PostsController < ApplicationController
   # DELETE /posts/1 or /posts/1.json
   def destroy
     @post = Post.find(params[:id])
-     redirect_to @post
-    # Criar funcao
+    @post.destroy
+    @post.destroy
+    redirect_to root_path, info: "Artigo deletado com sucesso."
   end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post

@@ -1,20 +1,21 @@
 <%= form_with(model: post) do |form| %>
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="w-100 d-flex justify-content-around align-items-center">
+    <div class="forms border border-dark shadow m-1 p-4 rounded shadow-sm">
+      <h1 class="h2 text-center">New Post</h1>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-2">
+        <h2 class="h6"><%= form.label :title %></h2>
+        <p><%= form.text_field :title, class:'p-1 border border-dark rounded' %></p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-2">
+        <h2 class="h6"><%= form.label :body %></h2>
+        <p><%= form.text_area :body, class:'p-5 border border-dark rounded' %></p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-2">
+        <h2 class="h6"><%= form.label :name %></h2>
+        <p><%= form.text_field :name, class:'p-1 border border-dark rounded' %></p>
+      </div>
+      <%= submit_tag "Criar", class: "my-1 btn btn-dark shadow col-12" %>
+      </div>
+    </div>
   </div>
 <% end %>

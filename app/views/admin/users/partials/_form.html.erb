@@ -1,7 +1,7 @@
 <%= form_tag(do_login_admin_users_path, method: :post, role: "form", class: "form-validation") do %>
   <div class="forms d-flex flex-column justify-content-between align-items-center">
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-4">
-    <label for="email">E-mail</label>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-4">
+      <label for="email">E-mail</label>
       <%= email_field_tag :email, nil, placeholder:'email',class: "border-0 border-bottom border-danger shadow form-control" %>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-4">
