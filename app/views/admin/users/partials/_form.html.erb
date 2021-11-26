@@ -2,12 +2,12 @@
   <div class="forms d-flex flex-column justify-content-between align-items-center">
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-4">
     <label for="email">E-mail</label>
-      <%= email_field_tag :email, nil, placeholder:'email',class: "border-0 border-bottom form-control" %>
+      <%= email_field_tag :email, nil, placeholder:'email',class: "border-0 border-bottom border-danger shadow form-control" %>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-4">
       <label for="senha">Senha</label>
-      <%= password_field_tag :senha, nil, placeholder:'senha',class: "border-0 border-bottom form-control" %>
+      <%= password_field_tag :senha, nil, placeholder:'senha',class: "border-0 border-bottom border-danger shadow form-control" %>
     </div>
-    <%= submit_tag "Entrar", class: "my-5 btn btn-dark shadow col-12" %>
+    <%= submit_tag "Entrar", class: "my-5 btn bg-dark btn-danger shadow col-12" %>
   </div>
 <% end %>

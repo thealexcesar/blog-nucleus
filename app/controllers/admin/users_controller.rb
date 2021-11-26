@@ -9,7 +9,6 @@ class Admin::UsersController < ApplicationController
   # ======================================================================
   # admin/users/login.erb
   def login
-
   end
 
   # admin/users/logout.erb
@@ -26,14 +25,14 @@ class Admin::UsersController < ApplicationController
   # caso erro redirecona para o login com o erro
   def do_login
     if params[:email].blank?
-      redirect_to login_admin_users_path, alert: "Voce precisa digitar um email"
+      redirect_to login_admin_users_path, alert: "Você precisa digitar um email"
     else
       if params[:senha].blank?
-        redirect_to login_admin_users_path, alert: "digite senha"
+        redirect_to login_admin_users_path, alert: "Precisa digitar sua senha."
       else
         user = User.find_by_email params[:email]
         if user.nil?
-          redirect_to login_admin_users_path, alert: "Usuario nao existe"
+          redirect_to login_admin_users_path, alert: "Usuario nçao consta no banco de dados."
         else
           #verifica se senhas batem
           if user.senha == params[:senha]
@@ -41,7 +40,7 @@ class Admin::UsersController < ApplicationController
             session[:uid] = user.id
             session[:email] = user.email
             cookies.signed[:user_id] = user.id
-            redirect_to admin_users_path, notice: "logado"
+            redirect_to admin_users_path, notice: "Bem vindo de volta, #{current_user.email}"
           else
             redirect_to login_admin_users_path, alert: "senha errada"
           end
@@ -57,6 +56,7 @@ class Admin::UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
+    @user = User.find(params[:id])
   end
 
   # GET /users/new

@@ -1,0 +1,12 @@
+<div class="py-2 bg-dark w-100">
+  <div class="container d-flex justify-content-around align-items-center">
+    <div class="col-12">
+      <%= link_to root_path do %>
+        <img src="<%= image_path("logo.png") %>" width="90px" alt="logo nubank" />
+      <% end %>
+    </div>
+    <div class="d-flex col-3 justify-content-center">
+      <%= link_to 'Login', login_admin_users_path %>
+    </div>
+  </div>
+</div>
