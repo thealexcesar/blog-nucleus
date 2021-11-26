@@ -13663,3 +13663,142 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 66ms (Views: 25.0ms | ActiveRecord: 16.0ms | Allocations: 20145)
 
 
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:42:41 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"body"=>"comentario de teste 3"}, "commit"=>"Create Comment", "post_id"=>"2"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2031)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started GET "/" for 127.0.0.1 at 2021-11-26 10:42:55 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 29.0ms | Allocations: 7807)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 2.0ms | Allocations: 723)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 91.5ms | Allocations: 26056)
+Completed 200 OK in 102ms (Views: 82.8ms | ActiveRecord: 11.0ms | Allocations: 29102)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2021-11-26 10:42:57 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:27
+  Rendered collection of comments/_comment.html.erb [3 times] (Duration: 0.7ms | Allocations: 266)
+  Rendered comments/_new.html.erb (Duration: 3.0ms | Allocations: 2220)
+  Rendered posts/show.html.erb within layouts/application (Duration: 43.2ms | Allocations: 11494)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.6ms | Allocations: 520)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 19089)
+Completed 200 OK in 64ms (Views: 46.6ms | ActiveRecord: 7.9ms | Allocations: 21041)
+
+
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:43:05 -0300
+Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"body"=>"comentario 3"}, "commit"=>"Create Comment", "post_id"=>"2"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1025)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:43:06 -0300
+Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"body"=>"comentario 3"}, "commit"=>"Create Comment", "post_id"=>"2"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1003)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:43:06 -0300
+Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"body"=>"comentario 3"}, "commit"=>"Create Comment", "post_id"=>"2"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1001)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started GET "/posts/2" for 127.0.0.1 at 2021-11-26 10:44:15 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:27
+  Rendered collection of comments/_comment.html.erb [3 times] (Duration: 0.8ms | Allocations: 263)
+  Rendered comments/_new.html.erb (Duration: 3.0ms | Allocations: 2277)
+  Rendered posts/show.html.erb within layouts/application (Duration: 29.7ms | Allocations: 11667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 2.8ms | Allocations: 718)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 63.4ms | Allocations: 29802)
+Completed 200 OK in 102ms (Views: 58.0ms | ActiveRecord: 17.9ms | Allocations: 39283)
+
+
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:44:23 -0300
+  
+SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+...%i[ show edit update destroy ]]
+...                              ^):
+  
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:44:25 -0300
+  
+SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+...%i[ show edit update destroy ]]
+...                              ^):
+  
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:44:25 -0300
+  
+SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+...%i[ show edit update destroy ]]
+...                              ^):
+  
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:44:25 -0300
+  
+SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+...%i[ show edit update destroy ]]
+...                              ^):
+  
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+Started POST "/posts/2/comments" for 127.0.0.1 at 2021-11-26 10:45:58 -0300
+  
+SyntaxError (/home/alex/ruby/2.6.3/blog-nucleus/app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+...%i[ show edit update destroy ]]
+...                              ^):
+  
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end
+app/controllers/comments_controller.rb:2: syntax error, unexpected ']', expecting end

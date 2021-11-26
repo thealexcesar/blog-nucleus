@@ -1,11 +1,10 @@
 class CommentsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy ]]
   def create
     @post.comments.create! comments_params
     # CommentsMailer.submitted(comment).deliver_later
     # CommentsChannel.broadcast(comment)
-
-    redirect_to @post
+    redirect_to root_path
   end
 
   private
