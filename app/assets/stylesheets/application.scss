@@ -14,3 +14,11 @@
  *= require_self
  */
 @import "bootstrap";
+
+:root {
+  --purple: #820AD1;
+}
+
+.purple {
+  background-color: var(--purple);
+}

@@ -2,6 +2,8 @@ class Admin::UsersController < ApplicationController
   before_action :require_user, :nivel_admin?, except: [:login, :do_login, :logout]
   before_action :set_user, only: %i[ show edit update destroy ]
 
+  layout 'admin'
+
   # ======================================================================
   # Login methods ========================================================
   # ======================================================================
