@@ -10,11 +10,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="bg-light">
-  <div class="d-flex justify-content-between text-white">
-    <%= render 'admin/users/shared/header' %>
-  </div>
-  <%= render 'admin/users/shared/alerts' %>
-    <%= yield %>
+  <body class="bg-light d-flex flex-column justify-content-between">
+    <div class="header d-flex justify-content-between text-white">
+      <%= render 'admin/users/shared/header' %>
+    </div>
+    <main>
+
+      <%= render 'admin/users/shared/alerts' %>
+      <%= yield %>
+    </main>
+    <div class="footer d-flex justify-content-between bg-dark text-white">
+      <%= render 'admin/users/shared/footer' %>
+    </div>
   </body>
 </html>

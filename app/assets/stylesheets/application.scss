@@ -19,6 +19,10 @@
   --purple: #820AD1;
 }
 
+body, .main, div, .header, main, .footer {
+  overflow-x: hidden;
+}
+
 .purple {
   background-color: var(--purple);
 }
@@ -29,4 +33,19 @@ a {
 
 .forms {
   background-color: #eaeaea;
+}
+
+.header {
+  height: 10vh;
+}
+
+main {
+  height: 80vh;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
