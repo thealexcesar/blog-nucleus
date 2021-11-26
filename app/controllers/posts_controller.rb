@@ -1,8 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
 
-  # validates_presence_of :title
-
   # GET /posts or /posts.json
   def index
     @posts = Post.all
@@ -51,11 +49,8 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
-    @post.destroy
-    respond_to do |format|
-      format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    @post = Post.find(params[:id])
+     redirect_to @post
   end
 
   private

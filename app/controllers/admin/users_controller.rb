@@ -32,7 +32,7 @@ class Admin::UsersController < ApplicationController
       else
         user = User.find_by_email params[:email]
         if user.nil?
-          redirect_to login_admin_users_path, alert: "Usuario nçao consta no banco de dados."
+          redirect_to login_admin_users_path, alert: "Usuário não consta no banco de dados."
         else
           #verifica se senhas batem
           if user.senha == params[:senha]
@@ -40,9 +40,9 @@ class Admin::UsersController < ApplicationController
             session[:uid] = user.id
             session[:email] = user.email
             cookies.signed[:user_id] = user.id
-            redirect_to admin_users_path, notice: "Bem vindo de volta, #{current_user.email}"
+            redirect_to admin_users_path, notice: "Bem vindo de volta, #{user.nome}!"
           else
-            redirect_to login_admin_users_path, alert: "senha errada"
+            redirect_to login_admin_users_path, alert: "senha errada."
           end
         end
       end
