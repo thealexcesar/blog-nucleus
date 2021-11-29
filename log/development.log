@@ -29196,3 +29196,1792 @@ Processing by PostsController#about as HTML
 Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 9054)
 
 
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:19:37 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.6ms | Allocations: 524)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 248)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.6ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 287.9ms | Allocations: 18772)
+Completed 200 OK in 315ms (Views: 291.1ms | ActiveRecord: 0.0ms | Allocations: 23178)
+
+
+Started GET "/contact" for 127.0.0.1 at 2021-11-29 10:19:44 -0300
+Processing by PostsController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/contact.html.erb within layouts/application
+  Rendered posts/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 324)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 8187)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 8717)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:19:45 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 5377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.3ms | Allocations: 311)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 13428)
+Completed 200 OK in 32ms (Views: 21.2ms | ActiveRecord: 9.6ms | Allocations: 13963)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:32:39 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 5574)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 506)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 2930.2ms | Allocations: 160248)
+Completed 500 Internal Server Error in 2933ms (ActiveRecord: 16.3ms | Allocations: 161372)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:       <%= render 'admin/users/shared/alerts' %>
+    21:       <%= yield %>
+    22:     </main>
+    23:     <%= image_path %>
+    24:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    25:       <%= render 'admin/users/shared/footer' %>
+    26:     </div>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:32:51 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 496)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 23995)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.0ms | Allocations: 25231)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:       <%= render 'admin/users/shared/alerts' %>
+    21:       <%= yield %>
+    22:     </main>
+    23:     <%= image_path %>
+    24:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    25:       <%= render 'admin/users/shared/footer' %>
+    26:     </div>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:33:16 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.3ms | Allocations: 319)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 10091)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms | Allocations: 10470)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:       <%= render 'admin/users/shared/alerts' %>
+    21:       <%= yield %>
+    22:     </main>
+    23:     <%= image_path %>
+    24:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    25:       <%= render 'admin/users/shared/footer' %>
+    26:     </div>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:33:32 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 496)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 11120)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.9ms | Allocations: 12238)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    22:       <%= render 'admin/users/shared/alerts' %>
+    23:       <%= yield %>
+    24:     </main>
+    25:     <%= image_path %>
+    26:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    27:       <%= render 'admin/users/shared/footer' %>
+    28:     </div>
+  
+app/views/layouts/application.html.erb:25
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:33:39 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 491)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 11289)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.4ms | Allocations: 12407)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    22:       <%= render 'admin/users/shared/alerts' %>
+    23:       <%= yield %>
+    24:     </main>
+    25:     <%= image_path %>
+    26:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    27:       <%= render 'admin/users/shared/footer' %>
+    28:     </div>
+  
+app/views/layouts/application.html.erb:25
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:33:40 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 319)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10100)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.5ms | Allocations: 10471)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    22:       <%= render 'admin/users/shared/alerts' %>
+    23:       <%= yield %>
+    24:     </main>
+    25:     <%= image_path %>
+    26:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    27:       <%= render 'admin/users/shared/footer' %>
+    28:     </div>
+  
+app/views/layouts/application.html.erb:25
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:34:31 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 491)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 11238)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.9ms | Allocations: 12356)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:       <%= render 'admin/users/shared/alerts' %>
+    21:       <%= yield %>
+    22:     </main>
+    23:     <%= image_path %>
+    24:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    25:       <%= render 'admin/users/shared/footer' %>
+    26:     </div>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:34:36 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 491)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 11056)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.6ms | Allocations: 12174)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:       <%= render 'admin/users/shared/alerts' %>
+    21:       <%= yield %>
+    22:     </main>
+    23:     <%= image_path %>
+    24:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    25:       <%= render 'admin/users/shared/footer' %>
+    26:     </div>
+  
+app/views/layouts/application.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:34:50 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 491)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10797)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.1ms | Allocations: 11915)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    19:       <%= render 'admin/users/shared/alerts' %>
+    20:       <%= yield %>
+    21:     </main>
+    22:     <%= image_path %>
+    23:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    24:       <%= render 'admin/users/shared/footer' %>
+    25:     </div>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2021-11-29 10:34:53 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.3ms | Allocations: 319)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.3ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 9667)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.0ms | Allocations: 10038)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    19:       <%= render 'admin/users/shared/alerts' %>
+    20:       <%= yield %>
+    21:     </main>
+    22:     <%= image_path %>
+    23:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    24:       <%= render 'admin/users/shared/footer' %>
+    25:     </div>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:34:57 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 332)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 8814)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 9312)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    19:       <%= render 'admin/users/shared/alerts' %>
+    20:       <%= yield %>
+    21:     </main>
+    22:     <%= image_path %>
+    23:     <div class="footer d-flex justify-content-between bg-dark text-white">
+    24:       <%= render 'admin/users/shared/footer' %>
+    25:     </div>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:35:06 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 500)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 9909)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 11054)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:35:12 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 500)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 1.0ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 10067)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 11198)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:35:18 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 327)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8679)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 9071)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:35:22 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 500)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 9888)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 11019)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:36:09 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.8ms | Allocations: 499)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 2.0ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 2105.4ms | Allocations: 165667)
+Completed 200 OK in 2108ms (Views: 2106.9ms | ActiveRecord: 0.0ms | Allocations: 166798)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:36:17 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 494)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 10297)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 11433)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:36:44 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 11445)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 12555)
+
+
+  
+ActionView::Template::Error (The asset "11.png" is not present in the asset pipeline.
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag asset_path("11.png") %>
+    12:   </head>
+    13: 
+    14:   <body class="bg-light d-flex flex-column justify-content-between">
+  
+app/views/layouts/application.html.erb:11
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:37:27 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 11047)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 11418)
+
+
+  
+ActionView::Template::Error (The asset "11.png" is not present in the asset pipeline.
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag asset_path("11.png") %>
+    12:   </head>
+    13: 
+    14:   <body class="bg-light d-flex flex-column justify-content-between">
+  
+app/views/layouts/application.html.erb:11
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:37:35 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 1.2ms | Allocations: 232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.3ms | Allocations: 31884)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 0.0ms | Allocations: 36264)
+
+
+  
+ActionView::Template::Error (The asset "11.png" is not present in the asset pipeline.
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag asset_path("11.png") %>
+    12:   </head>
+    13: 
+    14:   <body class="bg-light d-flex flex-column justify-content-between">
+  
+app/views/layouts/application.html.erb:11
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:37:50 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 523)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 248)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.1ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 10384)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 11643)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:38:21 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 492)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.5ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 10165)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 11296)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:38:27 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 492)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 10167)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 11307)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:38:28 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 319)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 8775)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 9168)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:38:32 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 492)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.1ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 10175)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 11321)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:38:37 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 492)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 10167)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 11308)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:38:38 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 319)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 8774)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 9166)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:39:05 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 497)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 10167)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 11299)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:39:17 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 492)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 9927)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 11063)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:39:49 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 494)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 9928)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 11059)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:40:18 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.5ms | Allocations: 494)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 1.0ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.5ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 9928)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 11059)
+
+
+Started GET "/%3E%3C" for 127.0.0.1 at 2021-11-29 10:40:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3E%3C"):
+  
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:40:36 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.3ms | Allocations: 494)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 2.1ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 9932)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 11068)
+
+
+Started GET "/%3E%3C=%20image_tag" for 127.0.0.1 at 2021-11-29 10:40:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3E%3C=%20image_tag"):
+  
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:40:39 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 319)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8538)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 8930)
+
+
+Started GET "/%3E%3C=%20image_tag" for 127.0.0.1 at 2021-11-29 10:40:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3E%3C=%20image_tag"):
+  
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:41:16 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 743)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 10181)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 11317)
+
+
+Started GET "/%3E%20%3Cimg%20src=" for 127.0.0.1 at 2021-11-29 10:41:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3E%20%3Cimg%20src="):
+  
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:41:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 741)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 10179)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 11315)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:42:22 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 747)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 10181)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 11312)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:42:31 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 747)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 10190)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 11327)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:42:58 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 527)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 9961)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 11092)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:43:15 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 330)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8548)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 8940)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:43:26 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.6ms | Allocations: 534)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 9971)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:43:32 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 330)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 8548)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8940)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:43:33 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 329)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.4ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8544)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 8935)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:43:33 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 329)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.4ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8544)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 8935)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:43:34 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 329)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 8544)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 8935)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:44:07 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 525)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 9968)
+Completed 200 OK in 30ms (Views: 19.0ms | Allocations: 11105)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:44:28 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 525)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.1ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9959)
+Completed 200 OK in 19ms (Views: 17.4ms | Allocations: 11090)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:44:37 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 525)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.1ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9959)
+Completed 200 OK in 19ms (Views: 17.9ms | Allocations: 11090)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:44:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.8ms | Allocations: 531)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.2ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 9969)
+Completed 200 OK in 30ms (Views: 28.6ms | Allocations: 11101)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:45:14 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 531)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 9965)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 11101)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:45:34 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 531)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.4ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 9965)
+Completed 200 OK in 17ms (Views: 15.5ms | Allocations: 11096)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:45:40 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.7ms | Allocations: 530)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.6ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 9964)
+Completed 200 OK in 20ms (Views: 18.9ms | Allocations: 11095)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:45:54 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.5ms | Allocations: 531)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 9974)
+Completed 200 OK in 23ms (Views: 21.4ms | Allocations: 11111)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:46:16 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 530)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 9964)
+Completed 200 OK in 18ms (Views: 16.0ms | Allocations: 11095)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:46:31 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.3ms | Allocations: 529)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.6ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 9963)
+Completed 200 OK in 21ms (Views: 19.0ms | Allocations: 11094)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:47:09 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 536)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 9974)
+Completed 200 OK in 26ms (Views: 24.5ms | Allocations: 11106)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:47:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 527)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.2ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 9961)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 11097)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:48:02 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 526)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 9960)
+Completed 200 OK in 18ms (Views: 16.6ms | Allocations: 11091)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:48:17 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 9970)
+Completed 200 OK in 24ms (Views: 22.5ms | Allocations: 11102)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:48:37 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 2.0ms | Allocations: 526)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 1.3ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 2.3ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9960)
+Completed 200 OK in 21ms (Views: 20.0ms | Allocations: 11096)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:48:50 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 526)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 9960)
+Completed 200 OK in 15ms (Views: 13.8ms | Allocations: 11091)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:48:59 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 526)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 9960)
+Completed 200 OK in 27ms (Views: 24.9ms | Allocations: 11092)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:49:20 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 526)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 9969)
+Completed 200 OK in 15ms (Views: 13.3ms | Allocations: 11105)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:49:59 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 9967)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:50:07 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.6ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 9967)
+Completed 200 OK in 20ms (Views: 18.9ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:50:13 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 9976)
+Completed 200 OK in 17ms (Views: 15.3ms | Allocations: 11113)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:50:32 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 9967)
+Completed 200 OK in 15ms (Views: 13.5ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:50:36 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 9967)
+Completed 200 OK in 19ms (Views: 17.1ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:50:46 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.4ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 9976)
+Completed 200 OK in 18ms (Views: 17.4ms | Allocations: 11113)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:50:53 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.2ms | Allocations: 533)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9967)
+Completed 200 OK in 18ms (Views: 16.1ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:51:02 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 9966)
+Completed 200 OK in 24ms (Views: 22.1ms | Allocations: 11097)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:51:09 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 538)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 9976)
+Completed 200 OK in 27ms (Views: 25.4ms | Allocations: 11108)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:51:26 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.3ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 9967)
+Completed 200 OK in 23ms (Views: 20.7ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:51:41 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.5ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 9967)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:51:54 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 537)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 9976)
+Completed 200 OK in 27ms (Views: 25.1ms | Allocations: 11108)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:51:59 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 9967)
+Completed 200 OK in 24ms (Views: 22.4ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:52:28 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.2ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.8ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 9967)
+Completed 200 OK in 42ms (Views: 40.1ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:52:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 537)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 9978)
+Completed 200 OK in 36ms (Views: 34.1ms | Allocations: 11110)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:52:57 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 9972)
+Completed 200 OK in 19ms (Views: 17.3ms | Allocations: 11108)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:57:48 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 552)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9971)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 11102)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:58:13 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 9967)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 11098)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:58:48 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.1ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 9978)
+Completed 200 OK in 18ms (Views: 16.1ms | Allocations: 11115)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:59:07 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 9969)
+Completed 200 OK in 16ms (Views: 14.4ms | Allocations: 11100)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:59:13 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.2ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.5ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 9969)
+Completed 200 OK in 23ms (Views: 21.4ms | Allocations: 11100)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:59:36 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 537)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 9979)
+Completed 200 OK in 25ms (Views: 23.7ms | Allocations: 11111)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 10:59:45 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 9970)
+Completed 200 OK in 20ms (Views: 18.3ms | Allocations: 11106)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:22 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 2.1ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.9ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.4ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 9973)
+Completed 200 OK in 27ms (Views: 24.8ms | Allocations: 11104)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:31 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.6ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9973)
+Completed 200 OK in 16ms (Views: 14.1ms | Allocations: 11104)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:42 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.6ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9981)
+Completed 200 OK in 24ms (Views: 12.9ms | Allocations: 11118)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 339)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.4ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 8557)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 8949)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 8553)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8553)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8553)
+Completed 200 OK in 15ms (Views: 14.2ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:43 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8554)
+Completed 200 OK in 19ms (Views: 18.5ms | Allocations: 8946)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:44 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 8553)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:44 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8553)
+Completed 200 OK in 13ms (Views: 12.6ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:44 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 8553)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:44 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.6ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.4ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 8553)
+Completed 200 OK in 13ms (Views: 12.5ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:51 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.5ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 9981)
+Completed 200 OK in 22ms (Views: 20.4ms | Allocations: 11118)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:51 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 339)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 8557)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 8949)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:51 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 8553)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:00:51 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8553)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:01:01 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.3ms | Allocations: 537)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.2ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 9981)
+Completed 200 OK in 32ms (Views: 30.4ms | Allocations: 11113)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:01:01 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.5ms | Allocations: 339)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8557)
+Completed 200 OK in 14ms (Views: 12.0ms | Allocations: 8949)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:01:02 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.4ms | Allocations: 338)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 8553)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 8944)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:01:09 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.7ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 9972)
+Completed 200 OK in 20ms (Views: 18.5ms | Allocations: 11108)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:01:23 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 537)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 9985)
+Completed 200 OK in 27ms (Views: 25.4ms | Allocations: 11117)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:01:28 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 556)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 9975)
+Completed 200 OK in 17ms (Views: 15.0ms | Allocations: 11111)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:02:19 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 556)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 9975)
+Completed 200 OK in 20ms (Views: 19.0ms | Allocations: 11106)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:02:47 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 538)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 556)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 9984)
+Completed 200 OK in 27ms (Views: 25.2ms | Allocations: 11116)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:02:51 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.1ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 9974)
+Completed 200 OK in 20ms (Views: 17.5ms | Allocations: 11110)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:03:02 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.2ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 226)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 9972)
+Completed 200 OK in 27ms (Views: 24.9ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:03:41 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.3ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 9973)
+Completed 200 OK in 18ms (Views: 16.3ms | Allocations: 11104)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:22:17 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.2ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 9981)
+Completed 200 OK in 20ms (Views: 19.1ms | Allocations: 11118)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:23:07 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 10035)
+Completed 200 OK in 19ms (Views: 16.1ms | Allocations: 11166)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:23:36 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.6ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 9972)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:23:49 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.6ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.8ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.2ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 9981)
+Completed 200 OK in 33ms (Views: 20.7ms | Allocations: 11117)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:24:02 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.9ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.9ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9972)
+Completed 200 OK in 21ms (Views: 19.1ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:24:15 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 0.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.8ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 9972)
+Completed 200 OK in 22ms (Views: 20.3ms | Allocations: 11103)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:24:32 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.7ms | Allocations: 537)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 1.1ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.5ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 9981)
+Completed 200 OK in 34ms (Views: 32.6ms | Allocations: 11113)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:24:49 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.8ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 1.0ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 9972)
+Completed 200 OK in 20ms (Views: 18.7ms | Allocations: 11108)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-11-29 11:25:03 -0300
+Processing by PostsController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/about.html.erb within layouts/application
+  Rendered posts/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/users/shared/_header.html.erb (Duration: 1.0ms | Allocations: 532)
+  Rendered admin/users/shared/_alerts.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered admin/users/shared/_footer.html.erb (Duration: 0.7ms | Allocations: 553)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 9972)
+Completed 200 OK in 19ms (Views: 17.4ms | Allocations: 11103)
+
+

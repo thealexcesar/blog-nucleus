@@ -1,16 +1,19 @@
-<div class="d-flex justify-content-around align-items-center w-100">
-    <div class="d-flex justify-content-between me-5">
+<div class="d-flex justify-content-between align-items-center w-100 container-fluid">
+    <div class="me-5">
       <%= link_to root_path do %>
         <%= fa_icon("instagram") %>
       <% end %>
-      <%= link_to root_path, class:'px-5' do %>
+      <%= link_to root_path, class:'px-4' do %>
         <%= fa_icon("facebook-f") %>
       <% end %>
       <%= link_to root_path do %>
         <%= fa_icon("whatsapp") %>
       <% end %>
     </div>
-    <%= link_to 'Sobre', about_path %>
-    <%= link_to 'Contato', contact_path %>
-
+  <%= link_to 'Sobre', about_path %>
+  <%= link_to 'Contato', contact_path %>
+  <bloquote class="text-info small">&copy; Nucleus App: todos os direitos reservados.</bloquote>
+  <div class="me-2 mt-3">
+    <address class="text-info small">Blumenau - SC - Brasil</address>
+  </div>
 </div>

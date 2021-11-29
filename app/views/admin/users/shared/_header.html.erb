@@ -1,12 +1,13 @@
 <div class="py-2 bg-dark w-100">
-  <div class="container d-flex justify-content-around align-items-center">
-    <div class="col-11">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div style="width:190px;" class="pt-2" >
       <%= link_to root_path do %>
-        <img src="<%= image_path("logo.png") %>" width="90px" alt="logo nubank" />
+<!--        <img src="<%#= image_path("logo.png") %>" width="90px" alt="logo nubank" />-->
+        <%= image_tag "logo.png", class: '', style: 'height:40px;'%>
       <% end %>
     </div>
-    <div class="d-flex col-3 justify-content-center">
-      <%= link_to 'Login', login_admin_users_path %>
+    <div class="d-flex justify-content-center">
+      <%= link_to 'Login', login_admin_users_path, class: 'pe-2'%>
     </div>
   </div>
 </div>
