@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :comments
-  resources :posts
+  get '/about', to: 'posts#about'
+  get '/contact', to: 'posts#contact'
 
   root to: "posts#index"
 
@@ -12,7 +13,6 @@ Rails.application.routes.draw do
     end
   end
   resources :posts do
-
     resources :comments
   end
 end

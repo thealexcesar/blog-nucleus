@@ -9,22 +9,15 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *= require font-awesome
  *= require_tree .
  *= require_self
  */
 @import "bootstrap";
+@import "font-awesome";
 
-:root {
-  --purple: #820AD1;
-}
 
 body, .main, div, .header, main, .footer {
   overflow-x: hidden;
-}
-
-.purple {
-  background-color: var(--purple);
 }
 
 a {
@@ -48,4 +41,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.articles {
+  background-color: #efd09e;
+
 }

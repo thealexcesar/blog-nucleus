@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
       return false
     end
   end
-
+  
   def nivel_admin?
     if current_user.tipo != "admin"
       redirect_to login_admin_users_path, alert: "Acesso somente admin"
